@@ -64,7 +64,7 @@ const sortByDescending = function () {
 const calculateTotal = function () {
   const total = users.reduce((acc, user) => (acc = acc + user.balance), 0);
   const totalElement = document.createElement('div');
-  totalElement.innerHTML = `<h2>Total balance is <strong>${total}</strong></h2>`;
+  totalElement.innerHTML = `<h2>Total balance is <strong>₹ ${total}</strong></h2>`;
   main.appendChild(totalElement);
 };
 
